@@ -5,7 +5,7 @@
     "require": {
         "php": ">=5.5.9",
         "cakephp/cakephp": "~3.2",
-        "vamshop/vamshop-core": "3.0.x-dev"
+        "vamshop/vamshop-core": "^3.0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
