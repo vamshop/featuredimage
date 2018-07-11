@@ -38,7 +38,7 @@ class FeaturedImageBehavior extends Behavior
         $entity->featured_image_meta_id = $featuredImage->id;
         $entity->featured_image_id = $featuredImage->value;
         try {
-            $entity->featured_image = TableRegistry::get('Croogo/FileManager.Attachments')
+            $entity->featured_image = TableRegistry::get('Vamshop/FileManager.Attachments')
                 ->get($entity->featured_image_id);
         } catch (RecordNotFoundException $e) {
             //Image does not exist

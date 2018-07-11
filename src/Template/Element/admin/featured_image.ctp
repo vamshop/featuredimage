@@ -1,6 +1,6 @@
 <?php
 /**
- * @var \Croogo\Core\View\CroogoView $this
+ * @var \Vamshop\Core\View\VamshopView $this
  */
 $this->Html->script('FeaturedImage.box', ['block' => true]);
 
@@ -19,7 +19,7 @@ $selectedBlock .= $this->Html->link(__d('croogo', 'Remove featured image'), '#',
 $out .= $this->Html->div('text-xs-center selected-image collapse ' . (isset($entity->featured_image) ? 'show' : ''), $selectedBlock);
 
 $notSelectedBlock = $this->Html->link(__d('croogo', 'Select featured image'), [
-    'plugin' => 'Croogo/FileManager',
+    'plugin' => 'Vamshop/FileManager',
     'controller' => 'Attachments',
     'action' => 'index',
     '?' => [
@@ -46,7 +46,7 @@ $this->Form->unlockField('featured_image_id');
 echo $this->Html->div('', $out, ['id' => 'featured-image']);
 
 $fileChooser = $this->element(
-    'Croogo/Core.admin/modal',
+    'Vamshop/Core.admin/modal',
     [
         'id' => 'image-chooser',
         'title' => __d('croogo', 'Choose an image'),

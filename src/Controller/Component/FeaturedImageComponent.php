@@ -5,12 +5,12 @@ namespace FeaturedImage\Controller\Component;
 use Cake\Controller\Component;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
-use Croogo\Core\Croogo;
+use Vamshop\Core\Vamshop;
 
 /**
  * FeaturedImage Component
  *
- * @package Croogo.FileManager.Controller.Component
+ * @package Vamshop.FileManager.Controller.Component
  */
 class FeaturedImageComponent extends Component
 {
@@ -46,7 +46,7 @@ class FeaturedImageComponent extends Component
         $title = __d('croogo', 'Featured image');
         $element = 'FeaturedImage.admin/featured_image';
         $controllerName = $this->request->param('controller');
-        Croogo::hookAdminBox("Admin/$controllerName/add", $title, $element);
-        Croogo::hookAdminBox("Admin/$controllerName/edit", $title, $element);
+        Vamshop::hookAdminBox("Admin/$controllerName/add", $title, $element);
+        Vamshop::hookAdminBox("Admin/$controllerName/edit", $title, $element);
     }
 }

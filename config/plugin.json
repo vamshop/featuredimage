@@ -6,9 +6,9 @@
     "authorUrl": "http://waltherlalk.com",
     "dependencies": {
         "plugins": [
-            "Croogo/Nodes",
-            "Croogo/FileManager",
-            "Croogo/Meta"
+            "Vamshop/Nodes",
+            "Vamshop/FileManager",
+            "Vamshop/Meta"
         ]
     }
 }
