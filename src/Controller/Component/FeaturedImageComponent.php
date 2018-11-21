@@ -43,7 +43,7 @@ class FeaturedImageComponent extends Component
             return;
         }
 
-        $title = __d('croogo', 'Featured image');
+        $title = __d('vamshop', 'Featured image');
         $element = 'FeaturedImage.admin/featured_image';
         $controllerName = $this->request->param('controller');
         Vamshop::hookAdminBox("Admin/$controllerName/add", $title, $element);

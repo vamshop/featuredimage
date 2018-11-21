@@ -13,12 +13,12 @@ if (isset($entity->featured_image)) :
 else:
     $selectedBlock .= $this->Html->image('#', $options);
 endif;
-$selectedBlock .= $this->Html->link(__d('croogo', 'Remove featured image'), '#', [
+$selectedBlock .= $this->Html->link(__d('vamshop', 'Remove featured image'), '#', [
     'class' => 'btn btn-secondary remove-image'
 ]);
 $out .= $this->Html->div('text-xs-center selected-image collapse ' . (isset($entity->featured_image) ? 'show' : ''), $selectedBlock);
 
-$notSelectedBlock = $this->Html->link(__d('croogo', 'Select featured image'), [
+$notSelectedBlock = $this->Html->link(__d('vamshop', 'Select featured image'), [
     'plugin' => 'Vamshop/FileManager',
     'controller' => 'Attachments',
     'action' => 'index',
@@ -49,7 +49,7 @@ $fileChooser = $this->element(
     'Vamshop/Core.admin/modal',
     [
         'id' => 'image-chooser',
-        'title' => __d('croogo', 'Choose an image'),
+        'title' => __d('vamshop', 'Choose an image'),
         'modalSize' => 'modal-lg'
     ]
 );
